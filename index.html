@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guardian AI - Real-time Overdose Detection and Intervention</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #2c3e50;
+            scroll-behavior: smooth;
+        }
+        header {
+            background-color: #34495e;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            background-image: linear-gradient(rgba(52, 73, 94, 0.8), rgba(52, 73, 94, 0.8)), url('https://images.unsplash.com/photo-1526470608268-f674ce90ebd4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        header h1 {
+            font-size: 60px;
+            margin: 0;
+        }
+        header p {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        nav {
+            position: fixed;
+            width: 100%;
+            background-color: #2c3e50;
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: right;
+        }
+        nav ul li {
+            display: inline-block;
+            margin-left: 30px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        section {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        section h2 {
+            font-size: 42px;
+            margin-bottom: 40px;
+            text-align: center;
+            color: #e74c3c;
+        }
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .flex-item {
+            flex: 1 1 45%;
+            margin-bottom: 40px;
+        }
+        .flex-item h3 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #e67e22;
+        }
+        .flex-item p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .cta {
+            background-color: #e74c3c;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            margin-top: 60px;
+        }
+        .cta h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .cta a {
+            background-color: #c0392b;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        footer p {
+            margin: 0;
+        }
+        .top-link {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            background-color: #e74c3c;
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 18px;
+            display: none;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                text-align: center;
+            }
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+            .flex-item {
+                flex: 1 1 100%;
+            }
+            header h1 {
+                font-size: 40px;
+            }
+            header p {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="#problem">Problem</a></li>
+        <li><a href="#solution">Solution</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#customers">Customers</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<header>
+    <h1>Guardian AI</h1>
+    <p>Real-time Overdose Detection and Intervention</p>
+</header>
+
+<section id="problem">
+    <h2>The Problem</h2>
+    <div class="flex-container">
+        <div class="flex-item">
+            <h3>Delayed Response</h3>
+            <p>Drug overdoses in public spaces often go unnoticed until it's too late, leading to preventable fatalities.</p>
+        </div>
+        <div class="flex-item">
+            <h3>Lack of Real-time Data</h3>
+            <p>Emergency services lack real-time data to track and respond promptly to overdose incidents.</p>
+        </div>
+        <div class="flex-item">
+            <h3>Data Integration Gaps</h3>
+            <p>Disjointed data from various sources hinders timely interventions and strategic planning.</p>
+        </div>
+        <div class="flex-item">
+            <h3>Growing Health Crisis</h3>
+            <p>The escalating public health crisis of drug overdoses demands innovative and immediate solutions.</p>
+        </div>
+    </div>
+</section>
+
+<section id="solution">
+    <h2>Our Solution</h2>
+    <div class="flex-container">
+        <div class="flex-item">
+            <h3>AI-Powered Surveillance</h3>
+            <p>Utilizing advanced AI to monitor public areas and detect signs of drug overdoses in real-time.</p>
+        </div>
+        <div class="flex-item">
+            <h3>Integrated Data Systems</h3>
+            <p>Seamlessly integrating data from emergency services, hospitals, and community inputs for a holistic approach.</p>
+        </div>
+        <div class="flex-item">
+            <h3>Real-time Alerts</h3>
+            <p>Instant notifications to first responders, reducing response times and saving lives.</p>
+        </div>
+        <div class="flex-item">
+            <h3>Trend Analysis</h3>
+            <p>Analyzing drug usage trends to inform proactive community health management strategies.</p>
+        </div>
+    </div>
+</section>
+
+<section id="features">
+    <h2>Key Features</h2>
+    <div class="flex-container">
+        <div class="flex-item">
+            <h3>Public Health Integration</h3>
+            <p>Collaborations with local health departments to enhance the effectiveness of overdose interventions.</p>
+        </div>
+        <div class="flex-item">
+            <h3>Data Privacy & Ethics</h3>
+            <p>Strict adherence to data privacy policies and ethical guidelines to ensure public trust.</p>
+        </div>
+        <div class="flex-item">
+            <h3>Hyper-Local Deployment</h3>
+            <p>Customized solutions tailored to high-need areas, considering local demographics and overdose patterns.</p>
+        </div>
+        <div class="flex-item">
+            <h3>Advanced AI Algorithms</h3>
+            <p>Continuous improvement of machine learning models for accurate and reliable overdose detection.</p>
+        </div>
+        <div class="flex-item">
+            <h3>Community Engagement</h3>
+            <p>Active involvement of community members to increase acceptance and gather valuable insights.</p>
+        </div>
+        <div class="flex-item">
+            <h3>Multi-Channel Alerts</h3>
+            <p>Utilizing various communication channels to ensure timely alerts reach the right people.</p>
+        </div>
+    </div>
+</section>
+
+<section id="customers">
+    <h2>Who We Serve</h2>
+    <div class="flex-container">
+        <div class="flex-item">
+            <h3>City Health Officials</h3>
+            <p>Empowering public health directors to implement policies that reduce overdose incidents effectively.</p>
+        </div>
+        <div class="flex-item">
+            <h3>Emergency Response Teams</h3>
+            <p>Providing paramedics with tools to improve response times and allocate resources efficiently.</p>
+        </div>
+        <div class="flex-item">
+            <h3>Community Organizations</h3>
+            <p>Supporting non-profits in combating drug abuse through data-driven insights and resources.</p>
+        </div>
+        <div class="flex-item">
+            <h3>Smart City Planners</h3>
+            <p>Assisting urban planners in integrating innovative technologies into city infrastructures.</p>
+        </div>
+    </div>
+</section>
+
+<section class="cta" id="contact">
+    <h2>Join Us in Making Communities Safer</h2>
+    <p>Together, we can make a difference. Contact us to learn more.</p>
+    <a href="mailto:contact@guardianai.com">Get in Touch</a>
+</section>
+
+<a href="#top" class="top-link">↑</a>
+
+<footer>
+    <p>&copy; 2023 Guardian AI. All rights reserved.</p>
+</footer>
+
+<script>
+    // Show "Back to Top" button when scrolling down
+    window.addEventListener('scroll', function() {
+        const topLink = document.querySelector('.top-link');
+        if (window.pageYOffset > 300) {
+            topLink.style.display = 'block';
+        } else {
+            topLink.style.display = 'none';
+        }
+    });
+</script>
+
+</body>
+</html>
